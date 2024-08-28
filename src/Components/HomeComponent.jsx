@@ -5,6 +5,11 @@ import { FaTwitter } from "react-icons/fa";
 import { BiLogoLinkedin } from "react-icons/bi";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
+import MostPopularNews from './MostPopularNews';
+import Navbar from './Navbar';
+import Topnews from './Topnews';
+import PopularNews from './PopularNews';
+import FashionAndLifestyle from './FashionAndLifestyle';
 
 
 
@@ -14,10 +19,11 @@ const HomeComponent = () => {
     <div className="main">
 
         {/* top one */}
-        <div className="top w-full h-[50px] flex justify-between items-center  bg-[#000D39] ">
+        <div className="top w-full h-[50px] flex justify-center  bg-[#000D39] ">
 
 
-           {/* one */}
+           <div className=" w-[1170px] flex items-center gap-[227px]  justify-end ">
+            {/* one */}
            <div className=" flex gap-[19px]">
              {/* Tranding */}
              <div className="tranding flex items-center rounded-[3px] pl-[14px] pr-[14px] w-[100px] h-[34px] bg-[#ffffff37] ">
@@ -55,16 +61,22 @@ const HomeComponent = () => {
             {/* date */}
            </div>
            {/* tow */}
+           </div>
 
         </div>
         {/* top one */}
 
 
+
+
+
         {/* top tow */}
-        <div className="tow flex h-[150px]  items-center bg-[#F1F4FF] justify-between ">
+        <div className="tow flex h-[150px] bg-[#F1F4FF] justify-center ">
 
 
-            {/* logo */}
+            <div className=" h-[150px] w-[1170px] flex justify-between items-center ">
+
+                {/* logo */}
             <img className=' w-[242px] h-[60px] ' src="photos/logo.png" alt="logo" />
             {/* logo */}
 
@@ -114,10 +126,63 @@ const HomeComponent = () => {
               <Link to='#'> <img className=' w-[50px] h-[50px] ' src="photos/User.png" alt="user" /> </Link>
             {/* user */}
 
+
+            </div>
+
         </div>
         {/* top tow */}
-    </div>
-      
+
+
+        {/* top three */}
+        <Navbar/>
+        {/* top three */}
+
+
+        {/* top four */}
+        <MostPopularNews/>
+        {/* top four */}
+
+
+        {/* top five */}
+        <Topnews/>
+        {/* top five */}
+
+
+
+        {/* top six */}
+        <PopularNews/>
+        {/* top six */}
+
+
+        {/* top saven */}
+
+        <FashionAndLifestyle/>
+
+        {/* top saven */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>     
     </>
   )
 }
